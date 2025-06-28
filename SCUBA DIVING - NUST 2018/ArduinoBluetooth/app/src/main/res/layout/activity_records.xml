@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".records" >-->
+<!--</RelativeLayout>-->
+
+<!--<ScrollView-->
+<!--    android:id="@+id/scrollView1"-->
+<!--    android:layout_width="fill_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:background="#3d455b"-->
+<!--    android:layout_alignParentLeft="true" >-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color">
+
+    <HorizontalScrollView
+        android:id="@+id/hscrll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="Bluetooth Status"
+                android:textAlignment="center"
+                android:textColor="#0D47A1"
+                android:textSize="25dp"
+                android:textStyle="bold|italic" />
+
+            <TableLayout
+                android:id="@+id/table_main"
+                android:layout_below="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableLayout>
+        </RelativeLayout>
+    </HorizontalScrollView>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/t1"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="Bluetooth Status">-->
+
+<!--    </TextView>-->
+
+<!--    <HorizontalScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <TableLayout-->
+<!--            android:id="@+id/table_main"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--        </TableLayout>-->
+<!--    </HorizontalScrollView>-->
+</ScrollView>
